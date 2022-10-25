@@ -7,6 +7,10 @@
     "build": "vue-cli-service build"
   },
   "dependencies": {
+    "array-move": "^4.0.0",
+    "axios": "^1.1.3",
+    "bulma": "^0.9.4",
+    "chroma-js": "^2.4.2",
     "core-js": "^3.8.3",
     "vue": "^2.6.14"
   },

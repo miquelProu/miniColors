@@ -1,0 +1,68 @@
+@charset "utf-8";
+
+// Import a Google Font
+//@import url('https://fonts.googleapis.com/css?family=Nunito:400,700');
+
+
+//@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap');
+
+// Set your brand colors
+$primari: #033744;
+$background: #F4F4F4;
+
+
+// Update Bulma's global variables
+$family-sans-serif: 'Lato', sans-serif;
+$weight-bold: 700;
+
+
+$primary: $primari;
+
+$widescreen-enabled: false;
+$fullhd-enabled: false;
+
+// Update some of Bulma's component variables
+//$body-background-color: $fons;
+$control-border-width: 2px;
+$input-border-color: transparent;
+$input-shadow: none;
+//$navbar-height: 1px;
+
+
+
+//MODAL
+$modal-z: 1100;
+$modal-content-width: 90%;
+$modal-background-background-color: rgba(255, 255, 255, 0.80);
+$selected: #3298dc;
+
+//TABS
+$tabs-link-active-border-bottom-color: $selected;
+$tabs-border-bottom-width: 2px;
+
+
+
+
+//@import "../../node_modules/bulma/bulma.sass";
+
+// Import only what you need from Bulma
+@import "../../node_modules/bulma/sass/utilities/_all.sass";
+@import "../../node_modules/bulma/sass/base/_all.sass";
+@import "../../node_modules/bulma/sass/elements/_all.sass";
+//@import "../../node_modules/bulma/sass/layout/_all.sass";
+    @import "../../node_modules/bulma/sass/layout/section.sass";
+//@import "../../node_modules/bulma/sass/grid/_all.sass";
+    @import "../../node_modules/bulma/sass/grid/columns.sass";
+    @import "../../node_modules/bulma/sass/grid/tiles.sass";
+//@import "../../node_modules/bulma/sass/form/_all.sass";
+@import "../../node_modules/bulma/sass/components/_all.sass";
+//    @import "../../node_modules/bulma/sass/components/tabs.sass";
+//    @import "../../node_modules/bulma/sass/components/level.sass";
+//    @import "../../node_modules/bulma/sass/components/navbar.sass";
+//    @import "../../node_modules/bulma/sass/components/media.sass";
+@import "../../node_modules/bulma/sass/helpers/_all.sass";
+//    @import "../../node_modules/bulma/sass/helpers/spacing";
+
+//@import "mycss.scss";
