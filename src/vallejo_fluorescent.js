@@ -5,7 +5,7 @@ export const  vallejo_fluorescent = [
         "eng": "Fluorescent Yellow",
         "ordre": "206",
         "color": "#e3ec35",
-        "fabricant": " Vallejo Fluorescent"
+        "fabricant": "Vallejo Fluorescent"
     },
     {
         "referencia": "70.733",
@@ -13,7 +13,7 @@ export const  vallejo_fluorescent = [
         "eng": "Fluorescent Orange",
         "ordre": "207",
         "color": "#f0531c",
-        "fabricant": " Vallejo Fluorescent"
+        "fabricant": "Vallejo Fluorescent"
     },
     {
         "referencia": "70.735",
@@ -21,7 +21,7 @@ export const  vallejo_fluorescent = [
         "eng": "Fluorescent Magenta",
         "ordre": "208",
         "color": "#ed279d",
-        "fabricant": " Vallejo Fluorescent"
+        "fabricant": "Vallejo Fluorescent"
     },
     {
         "referencia": "70.736",
@@ -29,7 +29,7 @@ export const  vallejo_fluorescent = [
         "eng": "Fluorescent Blue",
         "ordre": "209",
         "color": "#3770be",
-        "fabricant": " Vallejo Fluorescent"
+        "fabricant": "Vallejo Fluorescent"
     },
     {
         "referencia": "70.737",
@@ -37,6 +37,6 @@ export const  vallejo_fluorescent = [
         "eng": "Fluorescent Green",
         "ordre": "210",
         "color": "#91d451",
-        "fabricant": " Vallejo Fluorescent"
+        "fabricant": "Vallejo Fluorescent"
     }
 ];

@@ -1,36 +1,112 @@
 <template>
   <div id="app">
-      <section class="section">
-          <textarea class="textarea" v-model="colorDef" placeholder="e.g. Hello world"></textarea>
-          <button class="button" @click="up">Upload</button>
-        <button class="button" @click="veure">Veure-ho</button>
-        <button class="button" @click="clear">Clear</button>
-          <button class="button" @click="ordena">Node</button>
-        <button class="button" @click="down">Download</button>
-        <button class="button" @click="getDelta" :class="{'is-loading': isDelting}" :style="deltaColorStyle">Delta</button>
+      <section class="botons section is-clearfix">
+          <div class="field  is-pulled-right">
+              <p class="control">
+                  <button class="button is-link" :class="(isLoading) ? 'is-loading' : ''" @click="canviarVista()">Canviar vista {{(colorsSelecteds.length !== 0) ? "("+colorsSelecteds.length+")" : ''}}</button>
+              </p>
+          </div>
+          <div class="field is-normal has-addons is-pulled-left">
+              <p class="control">
+                  <button class="button is-link" @click="saveSelection()">
+                      <span class="file-icon">
+                            <font-awesome-icon icon="fa-solid fa-floppy-disk"/>
+                          </span>
+                  </button>
+              </p>
+              <p class="control">
+                  <button class="button is-danger" @click="deleteSelection()">
+                      <span class="file-icon">
+                            <font-awesome-icon icon="fa-solid fa-eraser"/>
+                          </span>
+                  </button>
+              </p>
+              <p class="control">
+                  <button class="button" @click="down()">
+                      <span class="file-icon">
+                            <font-awesome-icon icon="fa-solid fa-download"/>
+                          </span>
+                  </button>
+              </p>
+              <div class="file is-normal is-pulled-left" :class="uploadState">
+                  <label class="file-label">
+                      <input class="file-input" type="file" name="resume"  ref="theFile" @change="uploadFile()">
+                      <span class="file-cta">
+                          <span class="file-icon">
+                            <font-awesome-icon icon="fa-solid fa-upload"/>
+                          </span>
+                          <span class="file-label">
+                            Choose a file…
+                          </span>
+                        </span>
+                  </label>
+              </div>
+          </div>
+
+
       </section>
       <section class="section">
-          <div class="tabs">
-              <ul style="position: relative;">
-                  <li :class="[tab==='model' ? 'is-active' : '']" @click="changeTab('model')"><a>Model Color</a></li>
-                  <li :class="[tab==='meta' ? 'is-active' : '']"  @click="changeTab('metal')"><a>Metalitzat</a></li>
-                  <li :class="[tab==='trans' ? 'is-active' : '']" @click="changeTab('trans')"><a>Transparents</a></li>
-                  <li :class="[tab==='fluo' ? 'is-active' : '']"  @click="changeTab('fluo')"><a>Fluorescent</a></li>
-                  <li :class="[tab==='game' ? 'is-active' : '']"  @click="changeTab('game')"><a>Game Color</a></li>
-                  <li style="position: absolute;right:0;" :class="[tab==='meu' ? 'is-active' : '']"  @click="changeTab('meu')"><a>Meus</a></li>
-              </ul>
+
+          <div class="field is-horizontal">
+              <div class="field-label is-small">
+                  <label class="label">Nom del color</label>
+              </div>
+              <div class="field-body">
+                  <div class="field has-addons">
+                      <p class="control is-expanded has-icons-right">
+                          <input class="input is-small" style="border-color: hsl(0deg, 0%, 71%);" type="text" placeholder="Text input"  v-model="textBuscar" @change="changeTextBuscar">
+                          <span class="icon is-small is-right is-clickable" @click="textBuscar=''"><font-awesome-icon icon="fa-solid fa-xmark"/></span>
+                      </p>
+                      <p class="control is-small">
+                          <a class="button is-static is-small">
+                              {{updateLen}}
+                          </a>
+                      </p>
+                  </div>
+              </div>
           </div>
-          <div class="columns is-multiline">
-              <color v-for="c in vColors"
-                     :key="c.referencia"
-                     :col="c"
-                     :isSelected="exists(c)"
-                     :isMeu="tab === 'meu'"
-                     :delta-color="deltaColor"
-                     @selected="clicka(c)"
-              ></color>
+
+          <div class="field is-horizontal">
+              <div class="field-label">
+                  <label class="label">Fabricant</label>
+              </div>
+              <div class="field-body">
+                  <div class="field is-narrow">
+                      <div class="control">
+                          <label class="checkbox" v-for="(marca, index) in modelMarcaTotal" :key="index">
+                              <input type="checkbox" name="AK3" :value="marca" style="margin-right: 5px;margin-left: 10px;" v-model="modelMarca" @change="changeMarca()">{{marca}}
+                          </label>
+                      </div>
+                  </div>
+              </div>
           </div>
       </section>
+      <section class="section"  v-if="colorToCompare">
+          <div class="columns">
+              <div class="column is-4">
+                  <color :col="colorToCompare"></color>
+              </div>
+              <div class="column">
+                  <button class="button is-small" @click="colorToCompare=''">Close</button>
+              </div>
+          </div>
+          <compare-colors :compare-colors="comparedColors" :color="colorToCompare"></compare-colors>
+      </section>
+     <section class="section">
+         <div class="columns is-multiline is-vcentered">
+             <div class="column is-2"
+                  v-for="(color, index) in filterColor"
+                  :key="index">
+                 <color :col="color"
+                        @selected="colorSelected"
+                        @afegit="addPropi"
+                        @esborrat="esborratPropi"
+                        :is-meu="isInMeu(color)"
+                        :is-selected-view="isViewingSelectedColors"
+                 ></color>
+             </div>
+         </div>
+     </section>
   </div>
 </template>
 
@@ -45,30 +121,78 @@
  * </ul>
  */
 import Color from './color.vue'
+import CompareColors from "@/compareColors.vue";
+
+import Colorjs from 'colorjs.io'
 import Chroma from 'chroma-js'
 import Axios from 'axios'
 import * as Sorts from './sorts.js'
 import {arrayMoveImmutable} from 'array-move';
-
+import { Chrome  } from 'vue-color'
+/*
 import {vallejo} from './vallejo.js'
 import {metalic} from './vallejo_metalitzat.js'
 import {vallejo_transparent} from './vallejo_transparent.js'
 import {vallejo_fluorescent} from './vallejo_fluorescent.js'
 import {game_color} from './vallejo_game'
+*/
+import Kunst from "@/marcasNames";
+
+import  {newAK3} from "@/newAk3";
+import {newModelColor} from "@/newModelColor";
+import {newGameColor} from "@/newGameColor";
+import {newCitadelBase} from "@/newCitadelBase";
+import {newCitadelLayer} from "@/newCitadelLayer";
+import {newCitadelShade} from "@/newCitadelShade";
+import {newPanzerAces} from "@/newPanzerAces";
+import {newArmyPainter} from "@/newArmyPainter";
+import {newCoreColors} from "@/newCoreColors";
+import {newP3} from "@/newP3";
+import {sortedByDefault} from "./sorts.js";
+
 
 export default {
     name: 'App',
     components: {
         Color,
+        'chrome-picker': Chrome,
+        CompareColors,
     },
     data: function(){
       return{
+          modelMarcaTotal: [Kunst.AK3, Kunst.MODEL, Kunst.GAME,
+              Kunst.PANZER, Kunst.C_BASE, Kunst.C_LAYER,
+              Kunst.C_SHADE, Kunst.ARMY, Kunst.CORE, Kunst.P3],
+          modelMarca: [Kunst.AK3, Kunst.MODEL, Kunst.GAME,
+              Kunst.PANZER, Kunst.C_BASE, Kunst.C_LAYER,
+              Kunst.C_SHADE, Kunst.ARMY, Kunst.CORE, Kunst.P3],
+          textBuscar: '',
+          textBuscarBackup: '',
           vColors: [],
+          Kunst: Object.freeze(Kunst),
+          selectedColor: null,
+         // comparedColors: [],
+          colorToCompare: null,
           colorsSelecteds: [],
+          allColors: [],
+          colorDef: '',
+          isUploadHidden: true,
+          isViewingSelectedColors: false,
+          updateLen: 0,
+          uploadState:'',
+          isLoading: false,
+
+
+          picker: '#194d33',
+          hasPicker: true,
+          pickerColor: '',
+
+
+          colorsMesh: [],
           tab: 'model',
           deltaColor: null,
           isDelting: false,
-          colorDef: '',
+
       }
     },
     computed:{
@@ -80,32 +204,69 @@ export default {
                 a['background-color'] = this.deltaColor;
             }
             return a;
-        }
+        },
+        filterColor(){
+            let self = this;
+            let retorn = this.vColors.filter(item => {
+                return self.modelMarca.includes(item.marca);
+            });
+            if(this.textBuscar.length > 3) {
+                retorn = retorn.filter(item => {
+                       return (
+                            (item.name.toLowerCase().includes(self.textBuscar.toLowerCase())) ||
+                             item.code.replace('.', '').includes(self.textBuscar.replace('.', ''))
+                        );
+                });
+            }
+            this.updateLen = retorn.length;
+            return retorn;
+        },
+
+        filterColorOnlyMarcas(){
+            let self = this;
+            return this.vColors.filter(item => {
+                return self.modelMarca.includes(item.marca);
+            });
+        },
+        comparedColors(){
+            /*this.findDelta("76");
+            this.findDelta("CMC");
+            this.findDelta("2000");
+            this.findDelta("ITP");*/
+            let copia = [...this.filterColorOnlyMarcas];
+            //console.log("FILTER", this.filterColorMethod());
+            let ss = Sorts.sortedByDeltaCustom(copia, this.selectedColor, "2000");
+            return ss.slice(1, 25);
+        },
     },
     methods:{
-        ordencio(color){
-            for (let v of vallejo) {
-                console.log(v.esp+": ", Chroma.deltaE(v.color, color));
-            }
+        changeMarca(){
+            console.log(this.modelMarca);
         },
-        changeTab(t){
-            if(t !== this.tab && t === 'model'){
-                this.vColors = vallejo;
-            } else if (t !== this.tab && t === 'metal') {
-                this.vColors = metalic;
-            } else if (t !== this.tab && t === 'trans') {
-                this.vColors = vallejo_transparent;
-            } else if (t !== this.tab && t === 'fluo') {
-                this.vColors = vallejo_fluorescent;
-            } else if (t !== this.tab && t === 'game') {
-                this.vColors = game_color;
-            } else if (t !== this.tab && t === 'meu') {
-                this.vColors = this.colorsSelecteds;
-            }
-            this.tab = t;
+        changeTextBuscar(){
+            console.log(this.textBuscar);
+        },
 
 
+        chromaDegrade(c, value){
+
+           return value < 0 ? Chroma(c).darken(value * -1).hex() : Chroma(c).brighten(value).hex();
         },
+        updateValue(v){
+            console.log("UPDATE VALUE", v);
+            this.pickerColor = v;
+        },
+        pickerClick(){
+            if(this.hasPicker){
+                this.hasPicker = false;
+            } else {
+                this.hasPicker = true;
+                console.log("COLOR A BUSCAR", this.pickerColor);
+                this.vColors = Sorts.sortedByDelta(this.vColors, this.pickerColor.hex);
+                this.deltaColor = this.pickerColor.hex;
+            }
+        },
+
         getDelta(){
             if(this.isDelting){
                 this.isDelting = false;
@@ -114,91 +275,13 @@ export default {
                 this.isDelting = true;
             }
         },
-        clicka(c){
-            console.log("CLICKA", c);
-            /*if (!this.isDelting) {
-                if (this.exists(c)) {
-                    let a = this.colorsSelecteds.filter(function (obj) {
-                        return obj.referencia !== c.referencia;
-                    });
-                    this.colorsSelecteds = a;
-                    this.saveSelection();
-                } else {
-                    this.afegeix(c);
-                }
-            } else {
-                this.deltaColor = c.color;
-                this.isDelting = false;
+
+        mesh(){
+            this.colorsMesh = [];
+            this.colorsMesh = [...vallejo];
+            /*for (let c of game_color){
+                this.colorsMesh = this.assingColorsOnList(c, this.colorsMesh);
             }*/
-
-            if (this.tab==='meu'){
-                let self = this;
-                console.log("COLOR REFERENCIA", c.referencia)
-                let oldIndex = this.colorsSelecteds.findIndex(function(o){
-                    console.log(o.referencia, o.esp);
-                    return  o.referencia === c.referencia;
-                });
-                console.log(oldIndex, this.colorsSelecteds[oldIndex]);
-
-                let taula = []
-                let v = 100.0;
-                let i = 0;
-
-
-                for (const [index, value] of this.colorsSelecteds.entries()) {
-                    if (value.referencia !== c.referencia && Chroma.deltaE(c.color, value.color) < v){
-                        v = Chroma.deltaE(c.color, value.color);
-                        i = index;
-                        console.log("NOU DELTA:", v);
-                        console.log(value.esp, index);
-                    }
-                }
-
-                taula = [];
-                let slicedArray = self.colorsSelecteds.slice((i > 1 ) ? i - 1 : 0, i + 2);
-                for (let s in slicedArray){
-                    slicedArray[s]['delta'] = Chroma.deltaE(c.color,slicedArray[s].color)
-                    taula.push(slicedArray[s]);
-                }
-                console.log(taula);
-                let delta = (taula[0].delta < taula[2].delta) ? -1 : 0;
-                let ii = this.colorsSelecteds.findIndex(o => o.referencia === taula[1].referencia);
-
-                console.log("MOURE: "+oldIndex+" a "+ii+" + "+delta);
-                this.colorsSelecteds = arrayMoveImmutable(this.colorsSelecteds,oldIndex, ii+delta);
-
-                //this.colorsSelecteds.splice(ii, 1);
-                //this.colorsSelecteds.splice(ii + delta, 0, taula[1]);
-                this.saveSelection();
-            }
-        },
-        ordena(){
-            console.log("ORDENA");
-            this.colorsSelecteds =  Sorts.sortedAsVallejo(this.colorsSelecteds);
-            this.saveSelection();
-        },
-        afegeix(c){
-            this.colorsSelecteds.push(c);
-            this.ordena();
-            this.saveSelection();
-        },
-        saveSelection(){
-            const parsed = JSON.stringify(this.colorsSelecteds);
-            localStorage.setItem('colors', parsed);
-        },
-        veure(){
-            console.log(localStorage);
-        },
-        clear(){
-            localStorage.clear();
-        },
-        exists(c){
-            for(const co of this.colorsSelecteds){
-                if (co.referencia === c.referencia){
-                    return true;
-                }
-            }
-            return false;
         },
         download(content, fileName, contentType) {
             var a = document.createElement("a");
@@ -211,52 +294,165 @@ export default {
             this.download(JSON.stringify(this.colorsSelecteds), 'json.txt', 'text/plain');
         },
         up(){
-            console.log("UNPARSED", this.colorDef);
-            console.log("PARSED", JSON.parse(this.colorDef));
-            this.colorsSelecteds = JSON.parse(this.colorDef);
-            this.colorDef = '';
+            if(this.isUploadHidden){
+                this.isUploadHidden = false;
+            } else if (!this.isUploadHidden && this.colorDef == '') {
+                this.isUploadHidden = true;
+            } else {
+                console.log("PARSED", JSON.parse(this.colorDef));
+                this.unparsed(this.colorDef);
+                this.colorDef = '';
+                this.isUploadHidden = true;
+            }
         },
-        node(){
+        unparsed(parsed){
+            let temp = JSON.parse(parsed);
+            console.log(temp);
+            this.colorsSelecteds = temp;
+        },
+        saveSelection(){
+            const parsed = JSON.stringify(this.colorsSelecteds);
+            localStorage.setItem('colors', parsed);
+            console.log("SAVED", localStorage.getItem('colors'));
+        },
+        deleteSelection(){
+            localStorage.removeItem('colors');
+            this.colorsSelecteds = [];
+            console.log("SELECTION AND LOCAL STORAGE DELETED!");
+        },
+        uploadFile(){
+            let file = this.$refs.theFile.files[0];
             let self = this;
-            /*
-            Axios.get('http://localhost:8888/api/books')
-                .then(function (response) {
-                    console.log(response.data);
-                })
-                .catch(function (error) {
-                    console.log("ERROR", error);
-                })
-                .finally(function () {
-                    console.log("ALWAYS");
-                });*/
+            let reader = new FileReader();
 
-            Axios.post('http://localhost:8888/api/books', self.colorsSelecteds)
-                .then(function (response) {
+            reader.readAsText(file);
+
+            reader.onload = function() {
+                if (reader.result) {
+                    let response;
+                    try {
+                        response = JSON.parse(reader.result);
+                        self.colorsSelecteds = response;
+                        self.uploadState = 'is-success';
+                    } catch (e) {
+                        self.uploadState = ' is-danger ';
+                        return console.error(e); // error in the above string (in this case, yes)!
+                    }
                     console.log(response);
-                })
-                .catch(function (error) {
-                    console.log(error);
-                });
+
+                }
+            };
         },
+        findDelta(tipus){
+            let self = this;
+            let prop = 99;
+            let col = null;
+            for (let c of this.vColors){
+                let val = Colorjs.deltaE(self.selectedColor.rgb, c.rgb, tipus);
+                if (c.name != self.selectedColor.name && val < prop){
+                    prop = val;
+                    col = c
+                }
+            }
+            console.log("APROP "+tipus, col);
+            console.log("Delta", prop);
+        },
+        isInMeu(col){
+            return this.colorsSelecteds.find(function(el){ return el.name === col.name }) !== undefined;
+        },
+        normalize(colors, marca){
+            let sortida = []
+            for (let c of colors){
+                let temp = {}
+                temp['name'] = c.name;
+                temp['rgb'] = c.rgb;
+                if (!c.hasOwnProperty('excludeFromColorMatches')){
+                    temp['excludeFromColorMatches'] = false
+                }
+
+                temp['code'] = '';
+                if (c.hasOwnProperty('code')){
+                    temp['code'] = c.code;
+                }
+                temp['marca'] = marca
+                sortida.push(temp);
+            }
+
+            return sortida;
+        },
+        addPropi(col){
+            this.colorsSelecteds.push(col);
+            this.colorsSelecteds= Sorts.sortedByDefault(this.colorsSelecteds, this.allColors);
+
+            console.log(col);
+            console.log(this.colorsSelecteds);
+        },
+        esborratPropi(col){
+            let i = this.vColors.findIndex(p => p.name === col.name)
+            this.vColors.splice(i,1);
+            this.colorsSelecteds.splice(i, 1);
+            this.updateLen = this.vColors.length;
+        },
+        colorSelected(col){
+            console.log("COLOR SELECTED:", col);
+            this.selectedColor = col;
+            this.colorToCompare = this.selectedColor;
+            console.log(this.comparedColors);
+        },
+
+        loadColors(){
+            this.vColors = this.normalize(newAK3, Kunst.AK3);
+            this.vColors.push(...this.normalize(newModelColor, Kunst.MODEL));
+            this.vColors.push(...this.normalize(newGameColor, Kunst.GAME));
+            this.vColors.push(...this.normalize(newPanzerAces, Kunst.PANZER));
+            this.vColors.push(...this.normalize(newCitadelBase, Kunst.C_BASE));
+            this.vColors.push(...this.normalize(newCitadelLayer, Kunst.C_LAYER));
+            this.vColors.push(...this.normalize(newCitadelShade, Kunst.C_SHADE));
+            this.vColors.push(...this.normalize(newArmyPainter, Kunst.ARMY));
+            this.vColors.push(...this.normalize(newCoreColors, Kunst.CORE));
+            this.vColors.push(...this.normalize(newP3, Kunst.P3));
+            this.updateLen = this.vColors.length;
+            console.log("TOTAL COLORS", this.vColors.length)
+        },
+        canviarVista(){
+            let self = this;
+            this.isLoading = true;
+            if (!this.isViewingSelectedColors) {
+                this.allColors = [];
+                this.allColors = [...this.vColors];
+                this.vColors = [];
+                this.vColors = [...this.colorsSelecteds];
+                this.textBuscarBackup = this.textBuscar;
+                this.textBuscar = '';
+            } else {
+                this.colorsSelecteds = []
+                this.colorsSelecteds = [...this.vColors];
+                this.vColors = []
+                this.vColors = [...this.allColors];
+                this.textBuscar = this.textBuscarBackup;
+            }
+            this.isViewingSelectedColors = !this.isViewingSelectedColors;
+            this.$nextTick(() => {
+                self.isLoading = false;
+                // ...other synchronous work here that causes other DOM changes
+            })
+        }
     },
     mounted() {
         console.log("HOLA COLORS");
         console.log("IS LOCALSTORAGE ACCESIBLE", (window.localStorage !== false));
-        this.vColors = vallejo;
+        this.loadColors()
 
         if (localStorage.getItem('colors')) {
             try {
-                this.colorsSelecteds = JSON.parse(localStorage.getItem('colors'));
+                console.log("TRY", localStorage.getItem('colors'));
+                this.unparsed(localStorage.getItem('colors'));
             } catch(e) {
+                console.log("CATCH");
                 localStorage.removeItem('colors');
             }
         }
-        console.log("COLORS", this.colorsSelecteds);
-
-        console.log("CHROMA", Chroma.deltaE('#ececee', '#eceeec'));
-        console.log("RR", Chroma('white').hsv());
-  //      let color = new Color("#459205");
-  //      console.log(color);
+        //this.mesh();
     }
 }
 </script>
@@ -271,8 +467,8 @@ export default {
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
   color: #2c3e50;
-  margin-top: 60px;
     font-size: 0.8rem;
+
 
 
 }

@@ -1,0 +1,2382 @@
+[
+    {
+        "name": "WHITE",
+        "code": "AK11001",
+        "rgb": "#ffffff"
+    },
+    {
+        "name": "OFFWHITE",
+        "code": "AK11002",
+        "rgb": "#edebe2"
+    },
+    {
+        "name": "WHITE GREY",
+        "code": "AK11003",
+        "rgb": "#f5f5ee"
+    },
+    {
+        "name": "IVORY",
+        "code": "AK11004",
+        "rgb": "#f3edc6"
+    },
+    {
+        "name": "GREENISH WHITE",
+        "code": "AK11005",
+        "rgb": "#e5eecc"
+    },
+    {
+        "name": "SILVER GREY",
+        "code": "AK11006",
+        "rgb": "#e5d9b9"
+    },
+    {
+        "name": "ROCK GREY",
+        "code": "AK11007",
+        "rgb": "#c0b897"
+    },
+    {
+        "name": "GRIMY GREY",
+        "code": "AK11008",
+        "rgb": "#dfc898"
+    },
+    {
+        "name": "WARM GREY",
+        "code": "AK11009",
+        "rgb": "#b4a88a"
+    },
+    {
+        "name": "MEDIUM GREY",
+        "code": "AK11010",
+        "rgb": "#b7b9a2"
+    },
+    {
+        "name": "BLUE-GREY",
+        "code": "AK11011",
+        "rgb": "#c7d0cd"
+    },
+    {
+        "name": "SKY GREY",
+        "code": "AK11012",
+        "rgb": "#babab7"
+    },
+    {
+        "name": "PALE GREY",
+        "code": "AK11013",
+        "rgb": "#aeb0b6"
+    },
+    {
+        "name": "MEDIUM SEA GREY",
+        "code": "AK11014",
+        "rgb": "#a09b81"
+    },
+    {
+        "name": "BEIGE",
+        "code": "AK11030",
+        "rgb": "#e1b949"
+    },
+    {
+        "name": "BUFF",
+        "code": "AK11031",
+        "rgb": "#d2ad5d"
+    },
+    {
+        "name": "PALE SAND",
+        "code": "AK11032",
+        "rgb": "#f0d782"
+    },
+    {
+        "name": "DARK SAND",
+        "code": "AK11033",
+        "rgb": "#e5bd58"
+    },
+    {
+        "name": "MEDIUM SAND",
+        "code": "AK11034",
+        "rgb": "#cd9a32"
+    },
+    {
+        "name": "SAND YELLOW",
+        "code": "AK11035",
+        "rgb": "#e9bd3a"
+    },
+    {
+        "name": "ICE YELLOW",
+        "code": "AK11036",
+        "rgb": "#fff08e"
+    },
+    {
+        "name": "PASTEL YELLOW",
+        "code": "AK11037",
+        "rgb": "#fcda75"
+    },
+    {
+        "name": "PALE YELLOW",
+        "code": "AK11038",
+        "rgb": "#fedd5b"
+    },
+    {
+        "name": "PURULENT YELLOW",
+        "code": "AK11039",
+        "rgb": "#ecd23b"
+    },
+    {
+        "name": "SAHARA YELLOW",
+        "code": "AK11040",
+        "rgb": "#b1940f"
+    },
+    {
+        "name": "GOLDEN YELLOW",
+        "code": "AK11041",
+        "rgb": "#f9b14c"
+    },
+    {
+        "name": "VOLCANIC YELLOW",
+        "code": "AK11042",
+        "rgb": "#f09219"
+    },
+    {
+        "name": "DIRTY YELLOW",
+        "code": "AK11043",
+        "rgb": "#eda81c"
+    },
+    {
+        "name": "YELLOW",
+        "code": "AK11044",
+        "rgb": "#fab718"
+    },
+    {
+        "name": "DEEP YELLOW",
+        "code": "AK11045",
+        "rgb": "#fdc608"
+    },
+    {
+        "name": "RADIANT YELLOW",
+        "code": "AK11046",
+        "rgb": "#ffd407"
+    },
+    {
+        "name": "LEMON YELLOW",
+        "code": "AK11047",
+        "rgb": "#ffe221"
+    },
+    {
+        "name": "LASER YELLOW",
+        "code": "AK11048",
+        "rgb": "#f0e639"
+    },
+    {
+        "name": "FLUORESCENT YELLOW",
+        "code": "AK11049",
+        "rgb": "#eee428"
+    },
+    {
+        "name": "LIGHT FLESH",
+        "code": "AK11050",
+        "rgb": "#fedeb4"
+    },
+    {
+        "name": "LUMINOUS FLESH",
+        "code": "AK11051",
+        "rgb": "#eec280"
+    },
+    {
+        "name": "BASIC SKIN TONE",
+        "code": "AK11052",
+        "rgb": "#f8b57c"
+    },
+    {
+        "name": "RADIANT FLESH",
+        "code": "AK11053",
+        "rgb": "#f8b058"
+    },
+    {
+        "name": "MEDIUM FLESH TONE",
+        "code": "AK11054",
+        "rgb": "#c9822f"
+    },
+    {
+        "name": "SUNNY SKIN TONE",
+        "code": "AK11055",
+        "rgb": "#f6a654"
+    },
+    {
+        "name": "DARK FLESH",
+        "code": "AK11056",
+        "rgb": "#eda538"
+    },
+    {
+        "name": "VAMPIRIC FLESH",
+        "code": "AK11057",
+        "rgb": "#cfbd82"
+    },
+    {
+        "name": "DECOMPOSED FLESH",
+        "code": "AK11058",
+        "rgb": "#baa361"
+    },
+    {
+        "name": "PASTEL PINK",
+        "code": "AK11059",
+        "rgb": "#f9c2a9"
+    },
+    {
+        "name": "SICKLY PINK",
+        "code": "AK11060",
+        "rgb": "#f7b393"
+    },
+    {
+        "name": "SALMON",
+        "code": "AK11061",
+        "rgb": "#f5a175"
+    },
+    {
+        "name": "OLD ROSE",
+        "code": "AK11062",
+        "rgb": "#f3957d"
+    },
+    {
+        "name": "BROWN ROSE",
+        "code": "AK11063",
+        "rgb": "#d98563"
+    },
+    {
+        "name": "BEIGE RED",
+        "code": "AK11064",
+        "rgb": "#de935a"
+    },
+    {
+        "name": "INTENSE PINK",
+        "code": "AK11065",
+        "rgb": "#eb748f"
+    },
+    {
+        "name": "PASTEL VIOLET",
+        "code": "AK11069",
+        "rgb": "#fce7f2"
+    },
+    {
+        "name": "PASTEL PEACH",
+        "code": "AK11076",
+        "rgb": "#f49a56"
+    },
+    {
+        "name": "LIGHT ORANGE",
+        "code": "AK11077",
+        "rgb": "#ef7b3d"
+    },
+    {
+        "name": "MEDIUM ORANGE",
+        "code": "AK11078",
+        "rgb": "#ec6833"
+    },
+    {
+        "name": "DEEP ORANGE",
+        "code": "AK11080",
+        "rgb": "#eb6025"
+    },
+    {
+        "name": "LUMINOUS ORANGE",
+        "code": "AK11082",
+        "rgb": "#f18606"
+    },
+    {
+        "name": "OCHER ORANGE",
+        "code": "AK11099",
+        "rgb": "#f7a95f"
+    },
+    {
+        "name": "LIGHT BROWN",
+        "code": "AK11100",
+        "rgb": "#cf8139"
+    },
+    {
+        "name": "DECK TAN",
+        "code": "AK11114",
+        "rgb": "#cfc5b0"
+    },
+    {
+        "name": "LIGHT EARTH",
+        "code": "AK11115",
+        "rgb": "#d0b57e"
+    },
+    {
+        "name": "TAN YELLOW",
+        "code": "AK11116",
+        "rgb": "#d29847"
+    },
+    {
+        "name": "OCHRE",
+        "code": "AK11118",
+        "rgb": "#c7952e"
+    },
+    {
+        "name": "LUMINOUS GREEN",
+        "code": "AK11128",
+        "rgb": "#ccd742"
+    },
+    {
+        "name": "FLUORESCENT GREEN",
+        "code": "AK11129",
+        "rgb": "#98c222"
+    },
+    {
+        "name": "PISTACHIO",
+        "code": "AK11130",
+        "rgb": "#dcd12a"
+    },
+    {
+        "name": "PASTEL GREEN",
+        "code": "AK11131",
+        "rgb": "#aad29a"
+    },
+    {
+        "name": "GREEN GRAY",
+        "code": "AK11132",
+        "rgb": "#e0e5bf"
+    },
+    {
+        "name": "GREEN SKY",
+        "code": "AK11134",
+        "rgb": "#8bb284"
+    },
+    {
+        "name": "FROG GREEN",
+        "code": "AK11136",
+        "rgb": "#98b920"
+    },
+    {
+        "name": "LIME GREEN",
+        "code": "AK11137",
+        "rgb": "#839f29"
+    },
+    {
+        "name": "INTERIOR YELLOW GREEN",
+        "code": "AK11138",
+        "rgb": "#aca316"
+    },
+    {
+        "name": "PALE BLUE",
+        "code": "AK11161",
+        "rgb": "#b5c4b7"
+    },
+    {
+        "name": "SPECTRUM BLUE",
+        "code": "AK11162",
+        "rgb": "#b3bebf"
+    },
+    {
+        "name": "PASTEL BLUE",
+        "code": "AK11168",
+        "rgb": "#bcdcb8"
+    },
+    {
+        "name": "SNOW BLUE",
+        "code": "AK11174",
+        "rgb": "#c9e4e0"
+    },
+    {
+        "name": "SKY BLUE",
+        "code": "AK11175",
+        "rgb": "#8ac4cc"
+    },
+    {
+        "name": "DEEP SKY BLUE",
+        "code": "AK11176",
+        "rgb": "#69b5c7"
+    },
+    {
+        "name": "OLD GOLD",
+        "code": "AK11192",
+        "rgb": "#c5a525"
+    },
+    {
+        "name": "METALLIC BLUE",
+        "code": "AK11199",
+        "rgb": "#879f9b"
+    },
+    {
+        "name": "ASTRAL BERYLLIUM",
+        "code": "AK11200",
+        "rgb": "#7a9d8e"
+    },
+    {
+        "name": "ANODIZED VIOLET",
+        "code": "AK11202",
+        "rgb": "#a48e9d"
+    },
+    {
+        "name": "METALLIC GREEN",
+        "code": "AK11205",
+        "rgb": "#779a52"
+    },
+    {
+        "name": "PEARL",
+        "code": "AK11206",
+        "rgb": "#efebd2"
+    },
+    {
+        "name": "ALUMINUM",
+        "code": "AK11207",
+        "rgb": "#c8c8c8"
+    },
+    {
+        "name": "SILVER",
+        "code": "AK11209",
+        "rgb": "#e0e5e7"
+    },
+    {
+        "name": "NATURAL STEEL",
+        "code": "AK11210",
+        "rgb": "#b2b1ac"
+    },
+    {
+        "name": "OILY STEEL",
+        "code": "AK11211",
+        "rgb": "#a6a28e"
+    },
+    {
+        "name": "CLEAR YELLOW",
+        "code": "AK11217",
+        "rgb": "#f4950c"
+    },
+    {
+        "name": "PURPLE INK",
+        "code": "AK11224",
+        "rgb": "#b37c88"
+    },
+    {
+        "name": "LUMINOUS GREEN INK",
+        "code": "AK11225",
+        "rgb": "#73b731"
+    },
+    {
+        "name": "TITANIUM WHITE INK",
+        "code": "AK11230",
+        "rgb": "#ffffff"
+    },
+    {
+        "name": "RETARDER",
+        "code": "AK11231",
+        "rgb": "#ffffff"
+    },
+    {
+        "name": "METAL MEDIUM",
+        "code": "AK11232",
+        "rgb": "#ffffff"
+    },
+    {
+        "name": "GLAZE MEDIUM",
+        "code": "AK11233",
+        "rgb": "#ffffff"
+    },
+    {
+        "name": "MATTE MEDIUM",
+        "code": "AK11234",
+        "rgb": "#ffffff"
+    },
+    {
+        "name": "GLOSS MEDIUM",
+        "code": "AK11235",
+        "rgb": "#ffffff"
+    },
+    {
+        "name": "CRACKLE MEDIUM",
+        "code": "AK11236",
+        "rgb": "#ffffff"
+    },
+    {
+        "name": "RAL 7028 Dunkelgelb Ausgabe 1944",
+        "code": "AK11319",
+        "rgb": "#a89666"
+    },
+    {
+        "name": "RAL 7028 Dunkelgelb ",
+        "code": "",
+        "rgb": "#a58f4a"
+    },
+    {
+        "name": "RAL 1039 F9 Sandbeige",
+        "code": "AK11325",
+        "rgb": "#af9053"
+    },
+    {
+        "name": "Cremeweiss",
+        "code": "AK11333",
+        "rgb": "#e0da98"
+    },
+    {
+        "name": "APC Interior Light Green ",
+        "code": "",
+        "rgb": "#bbcb92"
+    },
+    {
+        "name": "New Iraqi Army Sand",
+        "code": "AK11361",
+        "rgb": "#cfb36b"
+    },
+    {
+        "name": "British Sand Yellow",
+        "code": "AK11362",
+        "rgb": "#db9a31"
+    },
+    {
+        "name": "French Army Desert Sand",
+        "code": "AK11363",
+        "rgb": "#c99b5d"
+    },
+    {
+        "name": "Mustard Yellow",
+        "code": "AK11366",
+        "rgb": "#bf8e29"
+    },
+    {
+        "name": "Washable White Paint",
+        "code": "AK11372",
+        "rgb": "#ffffff"
+    },
+    {
+        "name": "Light Stone No.61",
+        "code": "AK11377",
+        "rgb": "#c5993a"
+    },
+    {
+        "name": "Portland Stone No.64",
+        "code": "AK11378",
+        "rgb": "#dfb976"
+    },
+    {
+        "name": "British Desert Pink ZI",
+        "code": "AK11382",
+        "rgb": "#f47d52"
+    },
+    {
+        "name": "Light Flesh",
+        "code": "AK11402",
+        "rgb": "#cc846d"
+    },
+    {
+        "name": "Highlight Flesh",
+        "code": "AK11403",
+        "rgb": "#fbc38f"
+    },
+    {
+        "name": "Orange Tan",
+        "code": "AK11409",
+        "rgb": "#c27f3f"
+    },
+    {
+        "name": "WWI German Light Blue",
+        "code": "AK11806",
+        "rgb": "#c8deec"
+    },
+    {
+        "name": "WWI German Lilac",
+        "code": "AK11807",
+        "rgb": "#b193af"
+    },
+    {
+        "name": "WWI German Grey-Green Primer",
+        "code": "AK11808",
+        "rgb": "#b7c4aa"
+    },
+    {
+        "name": "RLM 02 RLM-Grau ",
+        "code": "",
+        "rgb": "#979481"
+    },
+    {
+        "name": "RLM 04",
+        "code": "AK11813",
+        "rgb": "#f1a60d"
+    },
+    {
+        "name": "RLM 65 ",
+        "code": "",
+        "rgb": "#86a2a5"
+    },
+    {
+        "name": "RLM 65 ",
+        "code": "",
+        "rgb": "#94a198"
+    },
+    {
+        "name": "RLM 76 Version 1",
+        "code": "AK11827",
+        "rgb": "#a9b6a5"
+    },
+    {
+        "name": "RLM 76 Version 2",
+        "code": "AK11828",
+        "rgb": "#adbdbd"
+    },
+    {
+        "name": "RLM 76 Late War Variation",
+        "code": "AK11829",
+        "rgb": "#c1c19d"
+    },
+    {
+        "name": "RLM 78 ",
+        "code": "",
+        "rgb": "#80979f"
+    },
+    {
+        "name": "RLM 78 ",
+        "code": "",
+        "rgb": "#889d98"
+    },
+    {
+        "name": "RLM 79 ",
+        "code": "",
+        "rgb": "#e8a25a"
+    },
+    {
+        "name": "RAF Sky / FS 34424",
+        "code": "AK11844",
+        "rgb": "#b3b7a0"
+    },
+    {
+        "name": "RAF Azure Blue",
+        "code": "AK11845",
+        "rgb": "#7d9dc4"
+    },
+    {
+        "name": "RAF Sky Grey",
+        "code": "AK11848",
+        "rgb": "#a1a5a4"
+    },
+    {
+        "name": "RAF Light Aircraft Grey BS381C/627",
+        "code": "AK11853",
+        "rgb": "#b1b2aa"
+    },
+    {
+        "name": "RAF Camouflage ",
+        "code": "",
+        "rgb": "#979d9d"
+    },
+    {
+        "name": "RAF Camouflage Beige ",
+        "code": "",
+        "rgb": "#9d9580"
+    },
+    {
+        "name": "Zinc Chromate Yellow",
+        "code": "AK11858",
+        "rgb": "#e2d10f"
+    },
+    {
+        "name": "Light Gull Grey FS 16440",
+        "code": "AK11866",
+        "rgb": "#afafa5"
+    },
+    {
+        "name": "ADC Grey FS 16473",
+        "code": "AK11867",
+        "rgb": "#9faaa6"
+    },
+    {
+        "name": "Insignia White FS 17875",
+        "code": "AK11868",
+        "rgb": "#e6e8db"
+    },
+    {
+        "name": "Sand FS 33531",
+        "code": "AK11869",
+        "rgb": "#c6b49e"
+    },
+    {
+        "name": "Radome Tan FS 33613",
+        "code": "AK11870",
+        "rgb": "#e5c7a1"
+    },
+    {
+        "name": "USMC Sand FS 33711",
+        "code": "AK11871",
+        "rgb": "#f9d193"
+    },
+    {
+        "name": "Air Superiority Blue FS 35450",
+        "code": "AK11879",
+        "rgb": "#8ab0c3"
+    },
+    {
+        "name": "Duck Egg Blue FS 35622",
+        "code": "AK11880",
+        "rgb": "#c4d0c6"
+    },
+    {
+        "name": "Dark Ghost Grey FS 36320",
+        "code": "AK11887",
+        "rgb": "#87949c"
+    },
+    {
+        "name": "Light Ghost Grey FS 36375",
+        "code": "AK11888",
+        "rgb": "#9da6ab"
+    },
+    {
+        "name": "Light Grey FS 36495",
+        "code": "AK11889",
+        "rgb": "#c4c8c7"
+    },
+    {
+        "name": "Camouflage Grey FS 36622",
+        "code": "AK11890",
+        "rgb": "#c2c0b3"
+    },
+    {
+        "name": "IJN J3 Hai-iro ",
+        "code": "",
+        "rgb": "#909388"
+    },
+    {
+        "name": "IJN J3 SP ",
+        "code": "",
+        "rgb": "#958f75"
+    },
+    {
+        "name": "IJA #1 Hairyokushoku ",
+        "code": "",
+        "rgb": "#a7a896"
+    },
+    {
+        "name": "Grey-Blue 1920s-1930s",
+        "code": "AK11907",
+        "rgb": "#9db3a6"
+    },
+    {
+        "name": "AE-9/AII Light Grey",
+        "code": "AK11908",
+        "rgb": "#d4d5cd"
+    },
+    {
+        "name": "AII Light Blue",
+        "code": "AK11910",
+        "rgb": "#7da3ae"
+    },
+    {
+        "name": "A-18f Light Grey-Blue",
+        "code": "AK11912",
+        "rgb": "#85a59a"
+    },
+    {
+        "name": "MiG-25/MiG-31 Grey",
+        "code": "AK11920",
+        "rgb": "#bebfba"
+    },
+    {
+        "name": "DARK SEA GREY",
+        "code": "AK11015",
+        "rgb": "#7b7973"
+    },
+    {
+        "name": "GREY-GREEN",
+        "code": "AK11016",
+        "rgb": "#818166"
+    },
+    {
+        "name": "REDDISH GREY",
+        "code": "AK11017",
+        "rgb": "#7a6c53"
+    },
+    {
+        "name": "NEUTRAL GREY",
+        "code": "AK11018",
+        "rgb": "#686f69"
+    },
+    {
+        "name": "GRAPHITE",
+        "code": "AK11019",
+        "rgb": "#6d6f61"
+    },
+    {
+        "name": "ENGLISH GREY",
+        "code": "AK11020",
+        "rgb": "#706e65"
+    },
+    {
+        "name": "BASALT GREY",
+        "code": "AK11021",
+        "rgb": "#5e625e"
+    },
+    {
+        "name": "DARK GREY",
+        "code": "AK11022",
+        "rgb": "#4b4a45"
+    },
+    {
+        "name": "LEAD GREY",
+        "code": "AK11023",
+        "rgb": "#464842"
+    },
+    {
+        "name": "ASH GREY",
+        "code": "AK11024",
+        "rgb": "#42433a"
+    },
+    {
+        "name": "GERMAN GREY",
+        "code": "AK11025",
+        "rgb": "#383830"
+    },
+    {
+        "name": "TENEBROUS GREY",
+        "code": "AK11026",
+        "rgb": "#302c21"
+    },
+    {
+        "name": "RUBBER BLACK",
+        "code": "AK11027",
+        "rgb": "#29261a"
+    },
+    {
+        "name": "SMOKE BLACK",
+        "code": "AK11028",
+        "rgb": "#2c2c22"
+    },
+    {
+        "name": "BLACK",
+        "code": "AK11029",
+        "rgb": "#12120c"
+    },
+    {
+        "name": "LASER MAGENTA",
+        "code": "AK11066",
+        "rgb": "#6b102f"
+    },
+    {
+        "name": "MAGENTA",
+        "code": "AK11067",
+        "rgb": "#b23460"
+    },
+    {
+        "name": "FLUORESCENT MAGENTA",
+        "code": "AK11068",
+        "rgb": "#ea4e6a"
+    },
+    {
+        "name": "BLUE VIOLET",
+        "code": "AK11070",
+        "rgb": "#896fa5"
+    },
+    {
+        "name": "LILAC",
+        "code": "AK11071",
+        "rgb": "#656073"
+    },
+    {
+        "name": "DEEP VIOLET",
+        "code": "AK11072",
+        "rgb": "#75556f"
+    },
+    {
+        "name": "PURPLE",
+        "code": "AK11073",
+        "rgb": "#5b4650"
+    },
+    {
+        "name": "DEEP PURPLE",
+        "code": "AK11074",
+        "rgb": "#7c4b6a"
+    },
+    {
+        "name": "VIOLET RED",
+        "code": "AK11075",
+        "rgb": "#583436"
+    },
+    {
+        "name": "BURN ORANGE",
+        "code": "AK11079",
+        "rgb": "#dc5f2f"
+    },
+    {
+        "name": "FLUORESCENT ORANGE",
+        "code": "AK11081",
+        "rgb": "#ea561f"
+    },
+    {
+        "name": "DEAD RED",
+        "code": "AK11083",
+        "rgb": "#e94b4c"
+    },
+    {
+        "name": "RUBY",
+        "code": "AK11084",
+        "rgb": "#cf4948"
+    },
+    {
+        "name": "CADMIUM RED",
+        "code": "AK11085",
+        "rgb": "#e8592f"
+    },
+    {
+        "name": "AMARANTH RED",
+        "code": "AK11086",
+        "rgb": "#d04f28"
+    },
+    {
+        "name": "SCARLET RED",
+        "code": "AK11087",
+        "rgb": "#cf3b28"
+    },
+    {
+        "name": "DEEP RED",
+        "code": "AK11088",
+        "rgb": "#dc221a"
+    },
+    {
+        "name": "BLOOD RED",
+        "code": "AK11089",
+        "rgb": "#c6251c"
+    },
+    {
+        "name": "VERMILLION",
+        "code": "AK11090",
+        "rgb": "#c64d33"
+    },
+    {
+        "name": "CARMINE",
+        "code": "AK11091",
+        "rgb": "#b83f24"
+    },
+    {
+        "name": "MATT RED",
+        "code": "AK11092",
+        "rgb": "#b4321c"
+    },
+    {
+        "name": "BRICK RED",
+        "code": "AK11093",
+        "rgb": "#9e452a"
+    },
+    {
+        "name": "BORDEAUX RED",
+        "code": "AK11094",
+        "rgb": "#a33b30"
+    },
+    {
+        "name": "DIRTY RED",
+        "code": "AK11095",
+        "rgb": "#7f1c10"
+    },
+    {
+        "name": "WINE RED",
+        "code": "AK11096",
+        "rgb": "#681610"
+    },
+    {
+        "name": "BURNT RED",
+        "code": "AK11097",
+        "rgb": "#533125"
+    },
+    {
+        "name": "BLACK RED",
+        "code": "AK11098",
+        "rgb": "#43281f"
+    },
+    {
+        "name": "ORANGE BROWN",
+        "code": "AK11101",
+        "rgb": "#b2591f"
+    },
+    {
+        "name": "DEEP BROWN",
+        "code": "AK11102",
+        "rgb": "#874b2a"
+    },
+    {
+        "name": "MEDIUM RUST",
+        "code": "AK11103",
+        "rgb": "#9e4b30"
+    },
+    {
+        "name": "SADDLE BROWN",
+        "code": "AK11104",
+        "rgb": "#6a3b2c"
+    },
+    {
+        "name": "LIGHT RUST",
+        "code": "AK11105",
+        "rgb": "#da5713"
+    },
+    {
+        "name": "MAHOGANY BROWN",
+        "code": "AK11106",
+        "rgb": "#622c10"
+    },
+    {
+        "name": "DARK RUST",
+        "code": "AK11107",
+        "rgb": "#532711"
+    },
+    {
+        "name": "HULL RED",
+        "code": "AK11108",
+        "rgb": "#351c10"
+    },
+    {
+        "name": "DARK BROWN",
+        "code": "AK11109",
+        "rgb": "#533a17"
+    },
+    {
+        "name": "LEATHER BROWN",
+        "code": "AK11110",
+        "rgb": "#45311e"
+    },
+    {
+        "name": "BURNT UMBER",
+        "code": "AK11111",
+        "rgb": "#2b2012"
+    },
+    {
+        "name": "GRIM BROWN",
+        "code": "AK11112",
+        "rgb": "#1e160e"
+    },
+    {
+        "name": "CHOCOLATE ",
+        "code": "",
+        "rgb": "#302011"
+    },
+    {
+        "name": "GOLDEN BROWN",
+        "code": "AK11117",
+        "rgb": "#ae7713"
+    },
+    {
+        "name": "CORK",
+        "code": "AK11119",
+        "rgb": "#a27649"
+    },
+    {
+        "name": "MUD BROWN",
+        "code": "AK11120",
+        "rgb": "#725532"
+    },
+    {
+        "name": "TAN EARTH",
+        "code": "AK11121",
+        "rgb": "#7d5b33"
+    },
+    {
+        "name": "GREEN OCHRE",
+        "code": "AK11122",
+        "rgb": "#a68236"
+    },
+    {
+        "name": "JAPANESE BROWN",
+        "code": "AK11123",
+        "rgb": "#966e1d"
+    },
+    {
+        "name": "MIDDLE STONE",
+        "code": "AK11124",
+        "rgb": "#8c7129"
+    },
+    {
+        "name": "GREY BROWN",
+        "code": "AK11125",
+        "rgb": "#705b3c"
+    },
+    {
+        "name": "GREEN BROWN",
+        "code": "AK11126",
+        "rgb": "#705a22"
+    },
+    {
+        "name": "BRITISH KHAKI",
+        "code": "AK11127",
+        "rgb": "#674d20"
+    },
+    {
+        "name": "DARK GREEN GREY",
+        "code": "AK11133",
+        "rgb": "#3c4f3d"
+    },
+    {
+        "name": "FADED GREEN",
+        "code": "AK11135",
+        "rgb": "#7c8972"
+    },
+    {
+        "name": "GOLDEN OLIVE",
+        "code": "AK11139",
+        "rgb": "#747c28"
+    },
+    {
+        "name": "GRASS GREEN",
+        "code": "AK11140",
+        "rgb": "#64832c"
+    },
+    {
+        "name": "LIGHT GREEN",
+        "code": "AK11141",
+        "rgb": "#5a9231"
+    },
+    {
+        "name": "DEEP GREEN",
+        "code": "AK11142",
+        "rgb": "#1d632d"
+    },
+    {
+        "name": "MINT GREEN",
+        "code": "AK11143",
+        "rgb": "#008d61"
+    },
+    {
+        "name": "EMERALD GREEN",
+        "code": "AK11144",
+        "rgb": "#066343"
+    },
+    {
+        "name": "LIZARD GREEN",
+        "code": "AK11145",
+        "rgb": "#185a32"
+    },
+    {
+        "name": "DARK GREEN",
+        "code": "AK11146",
+        "rgb": "#24461f"
+    },
+    {
+        "name": "OLIVE GREEN",
+        "code": "AK11147",
+        "rgb": "#4b6125"
+    },
+    {
+        "name": "MEDIUM OLIVE GREEN",
+        "code": "AK11148",
+        "rgb": "#3f5120"
+    },
+    {
+        "name": "INTERMEDIATE GREEN",
+        "code": "AK11149",
+        "rgb": "#516f32"
+    },
+    {
+        "name": "GUNSHIP GREEN",
+        "code": "AK11150",
+        "rgb": "#475435"
+    },
+    {
+        "name": "BROWNISH GREEN",
+        "code": "AK11151",
+        "rgb": "#574715"
+    },
+    {
+        "name": "ALGA GREEN",
+        "code": "AK11152",
+        "rgb": "#565f21"
+    },
+    {
+        "name": "EXTRA DARK GREEN",
+        "code": "AK11153",
+        "rgb": "#22312a"
+    },
+    {
+        "name": "GERMAN FIELD GREY",
+        "code": "AK11154",
+        "rgb": "#423e24"
+    },
+    {
+        "name": "COMMAND GREEN",
+        "code": "AK11155",
+        "rgb": "#302e18"
+    },
+    {
+        "name": "CAMOUFLAGE GREEN",
+        "code": "AK11156",
+        "rgb": "#4e411c"
+    },
+    {
+        "name": "US DARK GREEN",
+        "code": "AK11157",
+        "rgb": "#433918"
+    },
+    {
+        "name": "REFLECTIVE GREEN",
+        "code": "AK11158",
+        "rgb": "#352f17"
+    },
+    {
+        "name": "RUSSIAN GREEN",
+        "code": "AK11159",
+        "rgb": "#292a17"
+    },
+    {
+        "name": "BLACK GREEN",
+        "code": "AK11160",
+        "rgb": "#182116"
+    },
+    {
+        "name": "INTERMEDIATE BLUE",
+        "code": "AK11163",
+        "rgb": "#676a67"
+    },
+    {
+        "name": "DARK BLUE-GREY",
+        "code": "AK11164",
+        "rgb": "#4c5e54"
+    },
+    {
+        "name": "GREY-BLUE",
+        "code": "AK11165",
+        "rgb": "#5f6772"
+    },
+    {
+        "name": "FRENCH BLUE",
+        "code": "AK11166",
+        "rgb": "#545754"
+    },
+    {
+        "name": "ANTHRACITE GREY",
+        "code": "AK11167",
+        "rgb": "#1d2a2c"
+    },
+    {
+        "name": "BLUE-GREEN",
+        "code": "AK11169",
+        "rgb": "#388678"
+    },
+    {
+        "name": "AQUATIC TURQUOISE",
+        "code": "AK11170",
+        "rgb": "#006558"
+    },
+    {
+        "name": "TURQUOISE",
+        "code": "AK11171",
+        "rgb": "#034b4e"
+    },
+    {
+        "name": "ARCHAIC/OLD TURQUOISE",
+        "code": "AK11172",
+        "rgb": "#00383a"
+    },
+    {
+        "name": "OCEAN BLUE",
+        "code": "AK11173",
+        "rgb": "#203736"
+    },
+    {
+        "name": "DUCAT BLUE",
+        "code": "AK11177",
+        "rgb": "#3a88a1"
+    },
+    {
+        "name": "FLUORESCENT BLUE",
+        "code": "AK11178",
+        "rgb": "#014063"
+    },
+    {
+        "name": "ULTRAMARINE",
+        "code": "AK11179",
+        "rgb": "#243776"
+    },
+    {
+        "name": "IMPERIAL BLUE",
+        "code": "AK11180",
+        "rgb": "#22274f"
+    },
+    {
+        "name": "DARK BLUE",
+        "code": "AK11181",
+        "rgb": "#1e2e4b"
+    },
+    {
+        "name": "DEEP BLUE",
+        "code": "AK11182",
+        "rgb": "#1d4167"
+    },
+    {
+        "name": "AMETHYST BLUE",
+        "code": "AK11183",
+        "rgb": "#332b47"
+    },
+    {
+        "name": "MEDIUM BLUE",
+        "code": "AK11184",
+        "rgb": "#183a49"
+    },
+    {
+        "name": "STAR BLUE",
+        "code": "AK11185",
+        "rgb": "#064860"
+    },
+    {
+        "name": "LIGHT PRUSSIAN BLUE",
+        "code": "AK11186",
+        "rgb": "#132b38"
+    },
+    {
+        "name": "STRONG DARK BLUE",
+        "code": "AK11187",
+        "rgb": "#071520"
+    },
+    {
+        "name": "OXFORD",
+        "code": "AK11188",
+        "rgb": "#353a42"
+    },
+    {
+        "name": "DARK PRUSSIAN BLUE",
+        "code": "AK11189",
+        "rgb": "#0c0e1a"
+    },
+    {
+        "name": "DARK SEA BLUE",
+        "code": "AK11190",
+        "rgb": "#0e1915"
+    },
+    {
+        "name": "GOLD",
+        "code": "AK11191",
+        "rgb": "#a87718"
+    },
+    {
+        "name": "RUSTY GOLD",
+        "code": "AK11193",
+        "rgb": "#81642a"
+    },
+    {
+        "name": "BRASS",
+        "code": "AK11194",
+        "rgb": "#b37624"
+    },
+    {
+        "name": "RUSTY BRASS",
+        "code": "AK11195",
+        "rgb": "#a15118"
+    },
+    {
+        "name": "BRONZE",
+        "code": "AK11196",
+        "rgb": "#926d23"
+    },
+    {
+        "name": "COPPER",
+        "code": "AK11197",
+        "rgb": "#c5631c"
+    },
+    {
+        "name": "BURNT TIN",
+        "code": "AK11198",
+        "rgb": "#361e13"
+    },
+    {
+        "name": "COBALT BLUE",
+        "code": "AK11201",
+        "rgb": "#0e2334"
+    },
+    {
+        "name": "FOUNDRY RED",
+        "code": "AK11203",
+        "rgb": "#c63935"
+    },
+    {
+        "name": "EMERALD METALLIC GREEN",
+        "code": "AK11204",
+        "rgb": "#257b3f"
+    },
+    {
+        "name": "DARK ALUMINUM",
+        "code": "AK11208",
+        "rgb": "#8b8a8a"
+    },
+    {
+        "name": "GUN METAL",
+        "code": "AK11212",
+        "rgb": "#5b5956"
+    },
+    {
+        "name": "CLEAR RED",
+        "code": "AK11213",
+        "rgb": "#c71618"
+    },
+    {
+        "name": "CLEAR BLUE",
+        "code": "AK11214",
+        "rgb": "#212e57"
+    },
+    {
+        "name": "CLEAR SMOKE",
+        "code": "AK11215",
+        "rgb": "#754e23"
+    },
+    {
+        "name": "CLEAR GREEN",
+        "code": "AK11216",
+        "rgb": "#029939"
+    },
+    {
+        "name": "CLEAR ORANGE",
+        "code": "AK11218",
+        "rgb": "#eb5f0a"
+    },
+    {
+        "name": "SEPIA INK",
+        "code": "AK11219",
+        "rgb": "#1f110a"
+    },
+    {
+        "name": "TURQUOISE INK",
+        "code": "AK11220",
+        "rgb": "#015e5e"
+    },
+    {
+        "name": "SKIN INK",
+        "code": "AK11221",
+        "rgb": "#933719"
+    },
+    {
+        "name": "SOOTY BLACK INK",
+        "code": "AK11222",
+        "rgb": "#605d48"
+    },
+    {
+        "name": "CARBON BLACK INK",
+        "code": "AK11223",
+        "rgb": "#0e0b07"
+    },
+    {
+        "name": "DARK GREEN INK",
+        "code": "AK11226",
+        "rgb": "#00673f"
+    },
+    {
+        "name": "PENETRATING RED INK",
+        "code": "AK11227",
+        "rgb": "#b64124"
+    },
+    {
+        "name": "NIGHT BLUE INK",
+        "code": "AK11228",
+        "rgb": "#0d1d27"
+    },
+    {
+        "name": "BURN UMBER INK",
+        "code": "AK11229",
+        "rgb": "#1c160f"
+    },
+    {
+        "name": "WWI British Khaki Brown Base",
+        "code": "AK11301",
+        "rgb": "#433325"
+    },
+    {
+        "name": "WWI French Milky Coffee",
+        "code": "AK11302",
+        "rgb": "#8a6e43"
+    },
+    {
+        "name": "WWI French Artillery Grey",
+        "code": "AK11303",
+        "rgb": "#485365"
+    },
+    {
+        "name": "WWI French Brown",
+        "code": "AK11304",
+        "rgb": "#3f1f16"
+    },
+    {
+        "name": "WWI French Green 1",
+        "code": "AK11305",
+        "rgb": "#2a3525"
+    },
+    {
+        "name": "WWI French Green 2",
+        "code": "AK11306",
+        "rgb": "#211f17"
+    },
+    {
+        "name": "RAL 7009 Hellgrau",
+        "code": "AK11307",
+        "rgb": "#6b612c"
+    },
+    {
+        "name": "RAL 6007 Grün",
+        "code": "AK11308",
+        "rgb": "#375d30"
+    },
+    {
+        "name": "RAL 6003 Olivgrün opt.1",
+        "code": "AK11309",
+        "rgb": "#3e4a20"
+    },
+    {
+        "name": "RAL 6003 Olivgrün opt.2",
+        "code": "AK11310",
+        "rgb": "#2e2c17"
+    },
+    {
+        "name": "RAL 6011 Resedagrün",
+        "code": "AK11311",
+        "rgb": "#52673a"
+    },
+    {
+        "name": "RAL 6011B Resedagrün",
+        "code": "AK11312",
+        "rgb": "#495c30"
+    },
+    {
+        "name": "RAL 7008 Graugrün",
+        "code": "AK11313",
+        "rgb": "#70662f"
+    },
+    {
+        "name": "RAL 7008 Graugrün Opt 2",
+        "code": "AK11314",
+        "rgb": "#5b6f34"
+    },
+    {
+        "name": "RAL 7017 Dunkelbraun",
+        "code": "AK11315",
+        "rgb": "#3f2f24"
+    },
+    {
+        "name": "RAL 7021 Dunkelgrau",
+        "code": "AK11316",
+        "rgb": "#171a19"
+    },
+    {
+        "name": "RAL 7027 Grau",
+        "code": "AK11317",
+        "rgb": "#5f573d"
+    },
+    {
+        "name": "RAL 7028 Dunkelgelb ",
+        "code": "",
+        "rgb": "#887e47"
+    },
+    {
+        "name": "RAL 6040 F9 Helloliv",
+        "code": "AK11323",
+        "rgb": "#544b29"
+    },
+    {
+        "name": "RAL 8031 F9 Sandbraun",
+        "code": "AK11326",
+        "rgb": "#7e582e"
+    },
+    {
+        "name": "RAL 8000 Gelbbraun",
+        "code": "AK11327",
+        "rgb": "#735b32"
+    },
+    {
+        "name": "RAL 8012 Rotbraun",
+        "code": "AK11328",
+        "rgb": "#621a19"
+    },
+    {
+        "name": "RAL 8013 Rotbraun",
+        "code": "AK11329",
+        "rgb": "#461216"
+    },
+    {
+        "name": "RAL 8017 Rotbraun",
+        "code": "AK11330",
+        "rgb": "#2f1c18"
+    },
+    {
+        "name": "RAL 8020 Braun",
+        "code": "AK11331",
+        "rgb": "#9f7749"
+    },
+    {
+        "name": "Olive Drab Base",
+        "code": "AK11334",
+        "rgb": "#474a28"
+    },
+    {
+        "name": "No1 Light Green ",
+        "code": "",
+        "rgb": "#4c591f"
+    },
+    {
+        "name": "No5 Earth Brown ",
+        "code": "",
+        "rgb": "#402c20"
+    },
+    {
+        "name": "No6 Earth Yellow ",
+        "code": "",
+        "rgb": "#98672f"
+    },
+    {
+        "name": "No8 Earth Red ",
+        "code": "",
+        "rgb": "#5f2f22"
+    },
+    {
+        "name": "No9 Olive Drab ",
+        "code": "",
+        "rgb": "#2f3520"
+    },
+    {
+        "name": "No13 Desert Sand ",
+        "code": "",
+        "rgb": "#987554"
+    },
+    {
+        "name": "Ocean Gray ",
+        "code": "",
+        "rgb": "#425364"
+    },
+    {
+        "name": "Dark Green ",
+        "code": "",
+        "rgb": "#28321b"
+    },
+    {
+        "name": "MERDC Sand ",
+        "code": "",
+        "rgb": "#76613e"
+    },
+    {
+        "name": "Field Drab ",
+        "code": "",
+        "rgb": "#48341a"
+    },
+    {
+        "name": "Forest Green ",
+        "code": "",
+        "rgb": "#212c19"
+    },
+    {
+        "name": "Australian Camouflage Brown",
+        "code": "AK11347",
+        "rgb": "#997f4b"
+    },
+    {
+        "name": "Australian Camouflage Green",
+        "code": "AK11348",
+        "rgb": "#4c591f"
+    },
+    {
+        "name": "CARC Tan 686A ",
+        "code": "",
+        "rgb": "#a98554"
+    },
+    {
+        "name": "Modern Spanish Green",
+        "code": "AK11350",
+        "rgb": "#404d29"
+    },
+    {
+        "name": "Wood Base",
+        "code": "AK11351",
+        "rgb": "#948a5b"
+    },
+    {
+        "name": "IDF Modern Grey",
+        "code": "AK11352",
+        "rgb": "#5b4b28"
+    },
+    {
+        "name": "IDF Sand Grey 1970s-1980s",
+        "code": "AK11353",
+        "rgb": "#635733"
+    },
+    {
+        "name": "IDF Early Sand Yellow",
+        "code": "AK11354",
+        "rgb": "#7f7341"
+    },
+    {
+        "name": "IDF Green",
+        "code": "AK11355",
+        "rgb": "#262b1a"
+    },
+    {
+        "name": "SLA Blue",
+        "code": "AK11356",
+        "rgb": "#3b5855"
+    },
+    {
+        "name": "LAF Green",
+        "code": "AK11357",
+        "rgb": "#24281e"
+    },
+    {
+        "name": "NATO Green",
+        "code": "AK11358",
+        "rgb": "#223522"
+    },
+    {
+        "name": "NATO Brown",
+        "code": "AK11359",
+        "rgb": "#3a281f"
+    },
+    {
+        "name": "NATO Black",
+        "code": "AK11360",
+        "rgb": "#1c1c1d"
+    },
+    {
+        "name": "French Army Green",
+        "code": "AK11364",
+        "rgb": "#3f4f44"
+    },
+    {
+        "name": "French Army Grey-Blue",
+        "code": "AK11365",
+        "rgb": "#838780"
+    },
+    {
+        "name": "Base Green ",
+        "code": "",
+        "rgb": "#2a2c1e"
+    },
+    {
+        "name": "Russian Green 4BO",
+        "code": "AK11368",
+        "rgb": "#324325"
+    },
+    {
+        "name": "Russian Dark Brown 6K",
+        "code": "AK11369",
+        "rgb": "#2c2415"
+    },
+    {
+        "name": "Russian Sand 7K",
+        "code": "AK11370",
+        "rgb": "#755627"
+    },
+    {
+        "name": "Protective Green 1920s-1930s",
+        "code": "AK11371",
+        "rgb": "#1e2d1d"
+    },
+    {
+        "name": "Khaki green No.3",
+        "code": "AK11373",
+        "rgb": "#403628"
+    },
+    {
+        "name": "Silver Grey No.28",
+        "code": "AK11374",
+        "rgb": "#888d53"
+    },
+    {
+        "name": "Slate No.34",
+        "code": "AK11375",
+        "rgb": "#3e4128"
+    },
+    {
+        "name": "British Dark Olive Green PFI",
+        "code": "AK11381",
+        "rgb": "#3a3928"
+    },
+    {
+        "name": "British Light Mud",
+        "code": "AK11383",
+        "rgb": "#707441"
+    },
+    {
+        "name": "S.C.C. No.1A Very Dark Brown",
+        "code": "AK11384",
+        "rgb": "#32231b"
+    },
+    {
+        "name": "S.C.C. No.2 Brown",
+        "code": "AK11385",
+        "rgb": "#704127"
+    },
+    {
+        "name": "S.C.C. No.15 Olive Drab",
+        "code": "AK11386",
+        "rgb": "#333523"
+    },
+    {
+        "name": "3B AU/ZB AU",
+        "code": "AK11387",
+        "rgb": "#181912"
+    },
+    {
+        "name": "Base Flesh",
+        "code": "AK11401",
+        "rgb": "#733d2a"
+    },
+    {
+        "name": "Shadow Flesh",
+        "code": "AK11404",
+        "rgb": "#873538"
+    },
+    {
+        "name": "Dark Shadow Flesh",
+        "code": "AK11405",
+        "rgb": "#4d2021"
+    },
+    {
+        "name": "Reddish Black",
+        "code": "AK11406",
+        "rgb": "#2f1a1b"
+    },
+    {
+        "name": "Black Uniform Base",
+        "code": "AK11407",
+        "rgb": "#0e0f0e"
+    },
+    {
+        "name": "Dot44 Brown Base",
+        "code": "AK11408",
+        "rgb": "#443828"
+    },
+    {
+        "name": "Dark Green",
+        "code": "AK11410",
+        "rgb": "#1a251e"
+    },
+    {
+        "name": "Light Green",
+        "code": "AK11411",
+        "rgb": "#658e40"
+    },
+    {
+        "name": "Medium Green",
+        "code": "AK11412",
+        "rgb": "#21341d"
+    },
+    {
+        "name": "Denison Tan Base",
+        "code": "AK11413",
+        "rgb": "#815d3b"
+    },
+    {
+        "name": "Splittermuster Base",
+        "code": "AK11414",
+        "rgb": "#615f3c"
+    },
+    {
+        "name": "Splittermuster Green Spots",
+        "code": "AK11415",
+        "rgb": "#253422"
+    },
+    {
+        "name": "Waffen Brown Grey",
+        "code": "AK11416",
+        "rgb": "#3c2c25"
+    },
+    {
+        "name": "Waffen Brown",
+        "code": "AK11417",
+        "rgb": "#533621"
+    },
+    {
+        "name": "Brown Black",
+        "code": "AK11418",
+        "rgb": "#1a120f"
+    },
+    {
+        "name": "Waffen Red Brown",
+        "code": "AK11419",
+        "rgb": "#3e221e"
+    },
+    {
+        "name": "Waffen Green",
+        "code": "AK11420",
+        "rgb": "#28371f"
+    },
+    {
+        "name": "Dark Olive Green",
+        "code": "AK11421",
+        "rgb": "#222d18"
+    },
+    {
+        "name": "Ocher Khaki",
+        "code": "AK11422",
+        "rgb": "#927a33"
+    },
+    {
+        "name": "Field Grey Base #2 ",
+        "code": "",
+        "rgb": "#34382e"
+    },
+    {
+        "name": "Grey Green",
+        "code": "AK11424",
+        "rgb": "#898a46"
+    },
+    {
+        "name": "Field Grey Base #1 ",
+        "code": "",
+        "rgb": "#333220"
+    },
+    {
+        "name": "Grey Blue",
+        "code": "AK11426",
+        "rgb": "#636d6e"
+    },
+    {
+        "name": "Green Uniform Base",
+        "code": "AK11427",
+        "rgb": "#242e1c"
+    },
+    {
+        "name": "Light Green Uniform",
+        "code": "AK11428",
+        "rgb": "#455729"
+    },
+    {
+        "name": "Russian Uniform Lights",
+        "code": "AK11429",
+        "rgb": "#5c6d22"
+    },
+    {
+        "name": "Russian Uniform Base",
+        "code": "AK11430",
+        "rgb": "#475520"
+    },
+    {
+        "name": "Russian Blue Lights",
+        "code": "AK11431",
+        "rgb": "#1a222e"
+    },
+    {
+        "name": "Russian Blue Base",
+        "code": "AK11432",
+        "rgb": "#0f131a"
+    },
+    {
+        "name": "US Olive Base Uniform",
+        "code": "AK11433",
+        "rgb": "#42401b"
+    },
+    {
+        "name": "Red Brown",
+        "code": "AK11434",
+        "rgb": "#6c342c"
+    },
+    {
+        "name": "Field Drab",
+        "code": "AK11435",
+        "rgb": "#6e4a2f"
+    },
+    {
+        "name": "Canvas Tone",
+        "code": "AK11436",
+        "rgb": "#413d24"
+    },
+    {
+        "name": "British Uniform Base",
+        "code": "AK11437",
+        "rgb": "#604428"
+    },
+    {
+        "name": "British Uniform Lights",
+        "code": "AK11438",
+        "rgb": "#7d5c26"
+    },
+    {
+        "name": "French Greyish Blue",
+        "code": "AK11439",
+        "rgb": "#38464d"
+    },
+    {
+        "name": "Desert Uniform Base",
+        "code": "AK11440",
+        "rgb": "#8d6018"
+    },
+    {
+        "name": "WWI German Fokker Grey",
+        "code": "AK11801",
+        "rgb": "#7a8c7c"
+    },
+    {
+        "name": "WWI German Light Green",
+        "code": "AK11802",
+        "rgb": "#769460"
+    },
+    {
+        "name": "WWI German Dark Green",
+        "code": "AK11803",
+        "rgb": "#344731"
+    },
+    {
+        "name": "WWI German Mauve",
+        "code": "AK11804",
+        "rgb": "#826881"
+    },
+    {
+        "name": "WWI German Red Brown",
+        "code": "AK11805",
+        "rgb": "#673614"
+    },
+    {
+        "name": "PC10 Late",
+        "code": "AK11809",
+        "rgb": "#3d422c"
+    },
+    {
+        "name": "PC12",
+        "code": "AK11810",
+        "rgb": "#40372e"
+    },
+    {
+        "name": "RLM 02 RLM-Grau ",
+        "code": "",
+        "rgb": "#80805e"
+    },
+    {
+        "name": "RLM 61",
+        "code": "AK11814",
+        "rgb": "#57524e"
+    },
+    {
+        "name": "RLM 62",
+        "code": "AK11815",
+        "rgb": "#676a4f"
+    },
+    {
+        "name": "RLM 63",
+        "code": "AK11816",
+        "rgb": "#7e7b6a"
+    },
+    {
+        "name": "RLM 66 ",
+        "code": "",
+        "rgb": "#363e40"
+    },
+    {
+        "name": "RLM 66 ",
+        "code": "",
+        "rgb": "#53524d"
+    },
+    {
+        "name": "RLM 70",
+        "code": "AK11821",
+        "rgb": "#474a41"
+    },
+    {
+        "name": "RLM 71",
+        "code": "AK11822",
+        "rgb": "#514f43"
+    },
+    {
+        "name": "RLM 72",
+        "code": "AK11823",
+        "rgb": "#464742"
+    },
+    {
+        "name": "RLM 73",
+        "code": "AK11824",
+        "rgb": "#424941"
+    },
+    {
+        "name": "RLM 74",
+        "code": "AK11825",
+        "rgb": "#5b5a55"
+    },
+    {
+        "name": "RLM 75",
+        "code": "AK11826",
+        "rgb": "#706f6d"
+    },
+    {
+        "name": "RLM 79 ",
+        "code": "",
+        "rgb": "#9c714e"
+    },
+    {
+        "name": "RLM 80",
+        "code": "AK11834",
+        "rgb": "#585745"
+    },
+    {
+        "name": "RLM 81 Version 1",
+        "code": "AK11835",
+        "rgb": "#585745"
+    },
+    {
+        "name": "RLM 81 Version 2",
+        "code": "AK11836",
+        "rgb": "#474d3f"
+    },
+    {
+        "name": "RLM 81 Version 3",
+        "code": "AK11837",
+        "rgb": "#5a5245"
+    },
+    {
+        "name": "RLM 82",
+        "code": "AK11838",
+        "rgb": "#4f5c4b"
+    },
+    {
+        "name": "RLM 83",
+        "code": "AK11839",
+        "rgb": "#394555"
+    },
+    {
+        "name": "RAF Dark Green",
+        "code": "AK11840",
+        "rgb": "#57574d"
+    },
+    {
+        "name": "RAF Dark Earth",
+        "code": "AK11841",
+        "rgb": "#72573c"
+    },
+    {
+        "name": "RAF Ocean Grey",
+        "code": "AK11842",
+        "rgb": "#5d686a"
+    },
+    {
+        "name": "RAF Medium Sea Grey BS381C/637",
+        "code": "AK11843",
+        "rgb": "#818c92"
+    },
+    {
+        "name": "RAF Middle Stone",
+        "code": "AK11846",
+        "rgb": "#a57e39"
+    },
+    {
+        "name": "RAF Cockpit Grey-Green",
+        "code": "AK11847",
+        "rgb": "#738168"
+    },
+    {
+        "name": "RAF Dark Slate Grey",
+        "code": "AK11849",
+        "rgb": "#5f5d51"
+    },
+    {
+        "name": "RAF Extra Dark Sea Grey BS381C/640",
+        "code": "AK11850",
+        "rgb": "#4f565e"
+    },
+    {
+        "name": "RAF Dark Sea Grey BS381C/638",
+        "code": "AK11851",
+        "rgb": "#696c71"
+    },
+    {
+        "name": "RAF PRU Blue BS381C/636",
+        "code": "AK11852",
+        "rgb": "#556b76"
+    },
+    {
+        "name": "RAF Dark Camouflage Grey BS381C/629",
+        "code": "AK11855",
+        "rgb": "#72797f"
+    },
+    {
+        "name": "Bronze Green",
+        "code": "AK11857",
+        "rgb": "#293625"
+    },
+    {
+        "name": "US Interior Yellow Green",
+        "code": "AK11859",
+        "rgb": "#848566"
+    },
+    {
+        "name": "Dark Olive Drab 41",
+        "code": "AK11860",
+        "rgb": "#535041"
+    },
+    {
+        "name": "Medium Green 42",
+        "code": "AK11861",
+        "rgb": "#47533f"
+    },
+    {
+        "name": "Neutral Grey 43",
+        "code": "AK11862",
+        "rgb": "#6c6d68"
+    },
+    {
+        "name": "ANA 613 Olive Drab",
+        "code": "AK11863",
+        "rgb": "#5b5849"
+    },
+    {
+        "name": "Deep Sea Blue",
+        "code": "AK11864",
+        "rgb": "#37464d"
+    },
+    {
+        "name": "M-485 Blue-Grey",
+        "code": "AK11865",
+        "rgb": "#72858b"
+    },
+    {
+        "name": "US Army Helo Drab FS 34031",
+        "code": "AK11872",
+        "rgb": "#474843"
+    },
+    {
+        "name": "Dull Dark Green FS 34092",
+        "code": "AK11873",
+        "rgb": "#4a5952"
+    },
+    {
+        "name": "USMC Green FS 34095",
+        "code": "AK11874",
+        "rgb": "#585c1f"
+    },
+    {
+        "name": "Field Green FS 34097",
+        "code": "AK11875",
+        "rgb": "#696e2b"
+    },
+    {
+        "name": "Green FS 34258",
+        "code": "AK11876",
+        "rgb": "#80825b"
+    },
+    {
+        "name": "Aggressor Blue FS 35109",
+        "code": "AK11877",
+        "rgb": "#3b6c70"
+    },
+    {
+        "name": "Blue FS 35190",
+        "code": "AK11878",
+        "rgb": "#5c979f"
+    },
+    {
+        "name": "Medium Gunship Grey FS 36118",
+        "code": "AK11881",
+        "rgb": "#5e626b"
+    },
+    {
+        "name": "Have Glass Grey FS 36170",
+        "code": "AK11882",
+        "rgb": "#706f6d"
+    },
+    {
+        "name": "F-15 Dark Grey ",
+        "code": "",
+        "rgb": "#6f7982"
+    },
+    {
+        "name": "Dark Gull Grey FS 36231",
+        "code": "AK11884",
+        "rgb": "#808487"
+    },
+    {
+        "name": "Aggressor Grey FS 36251",
+        "code": "AK11885",
+        "rgb": "#828385"
+    },
+    {
+        "name": "Medium Grey FS 36270",
+        "code": "AK11886",
+        "rgb": "#84898c"
+    },
+    {
+        "name": "IJN D1 Deep Green Black",
+        "code": "AK11893",
+        "rgb": "#2a362c"
+    },
+    {
+        "name": "IJN D2 Green Black",
+        "code": "AK11894",
+        "rgb": "#263731"
+    },
+    {
+        "name": "IJN Q1 Anti-Glare Blue-Black",
+        "code": "AK11895",
+        "rgb": "#1b2325"
+    },
+    {
+        "name": "IJN M3 ",
+        "code": "",
+        "rgb": "#676333"
+    },
+    {
+        "name": "IJN M3 ",
+        "code": "",
+        "rgb": "#504a2a"
+    },
+    {
+        "name": "IJN/IJA Aotake",
+        "code": "AK11898",
+        "rgb": "#0c5e73"
+    },
+    {
+        "name": "IJA #3 Hairanshoku ",
+        "code": "",
+        "rgb": "#4a5d5b"
+    },
+    {
+        "name": "IJA #7 Ohryuko Nana Go Shoku ",
+        "code": "",
+        "rgb": "#504a2a"
+    },
+    {
+        "name": "IJA #21 Midori iro ",
+        "code": "",
+        "rgb": "#31442e"
+    },
+    {
+        "name": "IJA #27 Ao Midori iro ",
+        "code": "",
+        "rgb": "#0c372d"
+    },
+    {
+        "name": "IJA #29 Ki Midori iro ",
+        "code": "",
+        "rgb": "#777125"
+    },
+    {
+        "name": "IJA #30 Karekusa iro ",
+        "code": "",
+        "rgb": "#867956"
+    },
+    {
+        "name": "IJA #31 Cha Kasshoku ",
+        "code": "",
+        "rgb": "#685247"
+    },
+    {
+        "name": "AII Green",
+        "code": "AK11909",
+        "rgb": "#313f1e"
+    },
+    {
+        "name": "A-14 Interior Steel Grey",
+        "code": "AK11911",
+        "rgb": "#657376"
+    },
+    {
+        "name": "A-19f Grass Green",
+        "code": "AK11913",
+        "rgb": "#53653d"
+    },
+    {
+        "name": "A-21m Light Yellowish Brown",
+        "code": "AK11914",
+        "rgb": "#8f8762"
+    },
+    {
+        "name": "AMT-4 ",
+        "code": "",
+        "rgb": "#425223"
+    },
+    {
+        "name": "AMT-7 Light Blue",
+        "code": "AK11916",
+        "rgb": "#6790a4"
+    },
+    {
+        "name": "AMT-11 Blue-Grey",
+        "code": "AK11917",
+        "rgb": "#475a61"
+    },
+    {
+        "name": "AMT-12 Dark Grey",
+        "code": "AK11918",
+        "rgb": "#2b3638"
+    },
+    {
+        "name": "Radome & Wheel Hub Green",
+        "code": "AK11919",
+        "rgb": "#2c652e"
+    }
+]
