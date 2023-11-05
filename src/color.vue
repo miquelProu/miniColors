@@ -6,8 +6,8 @@
             <div style="max-width: 115px;white-space: nowrap; overflow: hidden;"><span style="font-weight: bold;" :style= "[isMeu ? {'text-decoration': 'underline'} : {}]">{{col.name}}</span></div>
             <div>{{col.marca}}</div>
             <div>
-                <span  @click="clickat" class="icon is-clickable" ><font-awesome-icon icon="fa-solid fa-eyedropper"/></span>
-                <span @click="afegit" class="icon is-clickable"><font-awesome-icon icon="fa-solid fa-circle-plus"/></span>
+                <span v-if="!isSelectedView" @click="clickat" class="icon is-clickable" ><font-awesome-icon icon="fa-solid fa-eyedropper"/></span>
+                <span v-if="!isSelectedView" @click="afegit" class="icon is-clickable"><font-awesome-icon icon="fa-solid fa-circle-plus"/></span>
                 <span v-if="isSelectedView" @click="esborrat" class="icon is-clickable"><font-awesome-icon icon="fa-solid fa-circle-minus"/></span>
             </div>
         </div>

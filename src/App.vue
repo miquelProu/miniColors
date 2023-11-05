@@ -35,9 +35,6 @@
                           <span class="file-icon">
                             <font-awesome-icon icon="fa-solid fa-upload"/>
                           </span>
-                          <span class="file-label">
-                            Choose a file…
-                          </span>
                         </span>
                   </label>
               </div>
