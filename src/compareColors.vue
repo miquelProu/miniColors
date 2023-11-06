@@ -1,6 +1,6 @@
 <template>
     <div class="columns is-multiline">
-        <div class="column is-1 is-clearfix"  v-for="(col, index) in compareColors"
+        <div class="column is-1 is-clearfix"  v-for="(col, index) in compareCols"
              :key="index">
             <div style="width: 80px;height: 80px;position: relative;" class="xis-pulled-left" :style="{'background-color': col.rgb}">
                 <div style="position: absolute; top:25%; left:25%;width: 50%; height: 50%;" :style="{'background-color': color.rgb}"></div>
@@ -30,12 +30,15 @@ export default{
         }
     },
     data: function(){
-        return{}
+        return{
+            compareCols: [],
+        }
     },
     computed:{},
     watch:{
         compareColors(){
-            this.$forceUpdate();
+            this.compareCols = this.compareColors;
+            //this.$forceUpdate();
         }
     },
     methods: {
@@ -45,6 +48,7 @@ export default{
     },
     mounted(){
         console.log("HOLA COMPARE COLORS");
+        this.compareCols = this.compareColors;
     }
 }
 

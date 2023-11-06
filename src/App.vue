@@ -71,7 +71,8 @@
                   <div class="field is-narrow">
                       <div class="control">
                           <label class="checkbox" v-for="(marca, index) in modelMarcaTotal" :key="index">
-                              <input type="checkbox" name="AK3" :value="marca" style="margin-right: 5px;margin-left: 10px;" v-model="modelMarca" @change="changeMarca()">{{marca}}
+                              <input type="checkbox" name="marca" :value="marca" style="margin-right: 5px;margin-left: 10px;" 
+                              v-model="modelMarca" @change="changeMarca()">{{marca}}
                           </label>
                       </div>
                   </div>
@@ -117,6 +118,7 @@
  * <li>Cuando el valor es 100, <strong>los colores son totalmente opuestos.</strong></li>
  * </ul>
  */
+
 import Color from './color.vue'
 import CompareColors from "@/compareColors.vue";
 
@@ -233,7 +235,8 @@ export default {
             let copia = [...this.filterColorOnlyMarcas];
             //console.log("FILTER", this.filterColorMethod());
             let ss = Sorts.sortedByDeltaCustom(copia, this.selectedColor, "2000");
-            return ss.slice(1, 25);
+            let inici = (this.isViewingSelectedColors) ? 0: 1;
+            return ss.slice(inici, 24 + inici);
         },
     },
     methods:{

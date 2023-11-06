@@ -7,7 +7,7 @@
             <div>{{col.marca}}</div>
             <div>
                 <span v-if="!isSelectedView" @click="clickat" class="icon is-clickable" ><font-awesome-icon icon="fa-solid fa-eyedropper"/></span>
-                <span v-if="!isSelectedView" @click="afegit" class="icon is-clickable"><font-awesome-icon icon="fa-solid fa-circle-plus"/></span>
+                <span v-if="!isSelectedView && !isMeu" @click="afegit" class="icon is-clickable"><font-awesome-icon icon="fa-solid fa-circle-plus"/></span>
                 <span v-if="isSelectedView" @click="esborrat" class="icon is-clickable"><font-awesome-icon icon="fa-solid fa-circle-minus"/></span>
             </div>
         </div>
