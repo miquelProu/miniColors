@@ -71,13 +71,16 @@
                   <div class="field is-narrow">
                       <div class="control">
                           <label class="checkbox" v-for="(marca, index) in modelMarcaTotal" :key="index">
-                              <input type="checkbox" name="marca" :value="marca" style="margin-right: 5px;margin-left: 10px;" 
+                              <input type="checkbox" name="marca" :value="marca" style="margin-right: 5px;margin-left: 10px;"
                               v-model="modelMarca" @change="changeMarca()">{{marca}}
                           </label>
                       </div>
                   </div>
               </div>
           </div>
+      </section>
+      <section class="section" v-if="munsellColor !== ''">
+          <munsell :color="munsellColor"></munsell>
       </section>
       <section class="section"  v-if="colorToCompare">
           <div class="columns">
@@ -99,6 +102,7 @@
                         @selected="colorSelected"
                         @afegit="addPropi"
                         @esborrat="esborratPropi"
+                        @munsell="escullMunsell"
                         :is-meu="isInMeu(color)"
                         :is-selected-view="isViewingSelectedColors"
                  ></color>
@@ -121,6 +125,7 @@
 
 import Color from './color.vue'
 import CompareColors from "@/compareColors.vue";
+import Munsell from "@/munsell.vue";
 
 import Colorjs from 'colorjs.io'
 import Chroma from 'chroma-js'
@@ -156,6 +161,7 @@ export default {
         Color,
         'chrome-picker': Chrome,
         CompareColors,
+        Munsell,
     },
     data: function(){
       return{
@@ -180,6 +186,7 @@ export default {
           updateLen: 0,
           uploadState:'',
           isLoading: false,
+          munsellColor: '',
 
 
           picker: '#194d33',
@@ -392,6 +399,9 @@ export default {
             this.vColors.splice(i,1);
             this.colorsSelecteds.splice(i, 1);
             this.updateLen = this.vColors.length;
+        },
+        escullMunsell(col){
+            this.munsellColor = col;
         },
         colorSelected(col){
             console.log("COLOR SELECTED:", col);
