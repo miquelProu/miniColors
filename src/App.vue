@@ -240,6 +240,9 @@ export default {
             this.findDelta("2000");
             this.findDelta("ITP");*/
             let copia = [...this.filterColorOnlyMarcas];
+            console.log("LEN ANBANS", copia.length);
+            copia = this.filterComparableColors(copia);
+            console.log("LEN DESPRES", copia.length);
             //console.log("FILTER", this.filterColorMethod());
             let ss = Sorts.sortedByDeltaCustom(copia, this.selectedColor, "2000");
             let inici = (this.isViewingSelectedColors) ? 0: 1;
@@ -247,6 +250,27 @@ export default {
         },
     },
     methods:{
+        filterComparableColors(llista){
+            let self = this;
+            let si = 0;
+            let no = 0;
+            let nos=[];
+            let ret = llista.filter(item => {
+                if(item.code == 'AK11207'){
+                    console.log(item);
+                }
+                if(item.hasOwnProperty('excludeFromColorMatches')){
+                    si = si +1;
+                } else {
+                    nos.push(item);
+                    no = no + 1;
+                }
+                return (item.hasOwnProperty('excludeFromColorMatches') && !item.excludeFromColorMatches);
+            });
+            console.log(si, no);
+            console.log(nos);
+            return ret;
+        },
         changeMarca(){
             console.log(this.modelMarca);
         },

@@ -1032,7 +1032,8 @@ export const newAK3 = [
     {
         "name": "Aluminium",
         "rgb": "#ACADAD",
-		"code": "AK11207"
+		"code": "AK11207",
+        "excludeFromColorMatches": true,
     },
     {
         "name": "Dark Aluminium",

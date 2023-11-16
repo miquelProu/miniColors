@@ -1,11 +1,18 @@
 <template>
     <div class="content is-clearfix">
-        <div>Delta: {{delta.toFixed(2)}} Color: {{color.rgb}} Munsell: {{munsellColor}} || Hue: {{indX * 4.5}} Saturació: {{((indFulla * 0.05) + 1).toFixed(2)}} Luminositi: {{(indY * 0.05) + 1}}  Fulla: {{indFulla + 1}}/18 X:{{indX + 1}} Y:{{indY + 1}}</div>
-        <div class="content is-clearfix" v-for="(va, idx) in valors[this.indFulla]" style="margin-bottom: 0;position:relative;">
-            <div v-for="(v, iddx) in va" style="width: 15px;height: 15px;" class="is-pulled-left" :style="estil(v, idx, iddx)"></div>
-            <div style="position: absolute; left: 0;top:0">
-                <div v-for="(vv, idddx) in categoriesArray" style="width: 15px;height: 15px;background-color: transparent;" :style="catEstil(vv)" class="is-pulled-left"></div>
+        
+        <div class="content is-clearfix is-pulled-left" style="position:relative;margin:0 auto;">
+            <div class="content is-clearfix" v-for="(va, idx) in valors[this.indFulla]" style="margin-bottom: 0;">
+                <div v-for="(v, iddx) in va" style="width: 15px;height: 15px;" class="is-pulled-left" :style="estil(v, idx, iddx)"></div>
             </div>
+
+            <div style="position: absolute; left: 0;top:0">
+                <figure class="image" style="margin: 0;">
+                    <img src="noms_colors.png">
+                </figure>
+            </div>
+
+
         </div>
     </div>
 </template>
@@ -37,14 +44,6 @@ export default {
             indX: 0,
             delta: 100,
             munsellColor: '',
-            categoriesArray: [13,5,5,5,5,5,5,7,9,1,1,1,5,7,15,11,13,5,7,9,1,7,11,15,11,13,5,5,5,5,5,5,5,5,5,5,5,5,5,7,
-                9,1,1,7,9,1,3,13,0,0,0,6,9,1,1,0,1,1,3,12,6,13,4,5,4,5,5,5,5,7,13,1,1,1,3,9,1,1,1,3,
-                8,0,6,9,0,0,0,3,8,4,6,9,0,0,0,0,0,0,0,1,1,7,9,1,1,1,1,1,1,1,3,8,0,0,2,8,0,0,0,2,
-                8,6,11,12,4,0,4,6,14,13,1,0,0,0,0,0,0,0,0,0,2,9,0,0,0,0,0,0,0,0,2,8,0,0,2,12,0,0,0,2,
-                10,9,0,1,1,14,9,1,1,3,8,0,0,0,0,0,0,0,0,0,2,8,0,0,0,0,0,0,0,0,2,8,0,0,0,3,12,0,0,2,
-                10,9,0,0,6,9,0,0,4,6,12,4,4,4,0,0,0,0,0,0,2,12,4,4,4,0,0,0,0,0,6,8,0,0,0,0,3,12,4,6,
-                13,4,4,6,13,4,4,6,9,1,1,1,1,3,12,4,4,4,4,4,4,7,9,3,15,12,4,4,4,6,13,4,4,4,4,4,4,5,5,7,
-                13,5,5,5,5,5,5,5,4,4,4,4,4,4,5,5,5,5,5,5,5,5,4,4,5,5,5,5,5,7,15,13,5,5,5,5,5,5,5,7]
         }
     },
     computed: {
