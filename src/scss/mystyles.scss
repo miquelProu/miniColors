@@ -6,7 +6,9 @@
 
 //@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap');
 
-@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap');
+//@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,100;0,400;0,700;1,400&display=swap');
 
 // Set your brand colors
 $primari: #033744;
@@ -14,7 +16,7 @@ $background: #F4F4F4;
 
 
 // Update Bulma's global variables
-$family-sans-serif: 'Lato', sans-serif;
+$family-sans-serif: 'Roboto Condensed', sans-serif;
 $weight-bold: 700;
 
 

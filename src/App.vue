@@ -85,7 +85,7 @@
       <section class="section"  v-if="colorToCompare">
           <div class="columns">
               <div class="column is-4">
-                  <color :col="colorToCompare"></color>
+                  <color-h :col="colorToCompare"></color-h>
               </div>
               <div class="column">
                   <button class="button is-small" @click="colorToCompare=''">Close</button>
@@ -95,7 +95,7 @@
       </section>
      <section class="section">
          <div class="columns is-multiline is-vcentered">
-             <div class="column is-2"
+             <div class="column is-1"
                   v-for="(color, index) in filterColor"
                   :key="index">
                  <color :col="color"
@@ -124,6 +124,7 @@
  */
 
 import Color from './color.vue'
+import ColorH from './colorH.vue'
 import CompareColors from "@/compareColors.vue";
 import Munsell from "@/munsell.vue";
 
@@ -158,6 +159,7 @@ import {sortedByDefault} from "./sorts.js";
 export default {
     name: 'App',
     components: {
+        ColorH,
         Color,
         'chrome-picker': Chrome,
         CompareColors,
