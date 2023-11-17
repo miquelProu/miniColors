@@ -3,7 +3,7 @@
       <section class="botons section is-clearfix">
           <div class="field  is-pulled-right">
               <p class="control">
-                  <button class="button is-link" :class="(isLoading) ? 'is-loading' : ''" @click="canviarVista()">Canviar vista {{(colorsSelecteds.length !== 0) ? "("+colorsSelecteds.length+")" : ''}}</button>
+                  <button class="button is-link" :class="(isLoading) ? 'is-loading' : ''" @click="canviarVista()">Sel&middot;leci&oacute; {{(colorsSelecteds.length !== 0) ? "("+colorsSelecteds.length+")" : ''}}</button>
               </p>
           </div>
           <div class="field is-normal has-addons is-pulled-left">
@@ -42,8 +42,7 @@
 
 
       </section>
-      <section class="section">
-
+      <section class="section formulari">
           <div class="field is-horizontal">
               <div class="field-label is-small">
                   <label class="label">Nom del color</label>
@@ -64,12 +63,12 @@
           </div>
 
           <div class="field is-horizontal">
-              <div class="field-label">
+              <div class="field-label is-small">
                   <label class="label">Fabricant</label>
               </div>
               <div class="field-body">
                   <div class="field is-narrow">
-                      <div class="control">
+                      <div class="control has-text-left">
                           <label class="checkbox" v-for="(marca, index) in modelMarcaTotal" :key="index">
                               <input type="checkbox" name="marca" :value="marca" style="margin-right: 5px;margin-left: 10px;"
                               v-model="modelMarca" @change="changeMarca()">{{marca}}
@@ -83,13 +82,11 @@
           <munsell :color="munsellColor"></munsell>
       </section>
       <section class="section"  v-if="colorToCompare">
-          <div class="columns">
-              <div class="column is-4">
-                  <color-h :col="colorToCompare"></color-h>
-              </div>
-              <div class="column">
-                  <button class="button is-small" @click="colorToCompare=''">Close</button>
-              </div>
+          <div class="content is-clearfix">
+
+                  <color-h :col="colorToCompare" class="is-pulled-left"></color-h>
+
+                  <button class="button is-small is-pulled-left ml-4" @click="colorToCompare=''">Close</button>
           </div>
           <compare-colors :compare-colors="comparedColors" :color="colorToCompare"></compare-colors>
       </section>
@@ -504,6 +501,17 @@ export default {
   text-align: center;
   color: #2c3e50;
     font-size: 0.8rem;
+
+    section.botons {
+        padding-bottom: 1.5rem;
+        .file-icon {
+            margin-right: 0;
+        }
+    }
+    section.formulari{
+        padding-bottom: 0;
+        padding-top: 0;
+    }
 
 
 
